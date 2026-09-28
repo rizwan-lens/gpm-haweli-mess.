@@ -45,6 +45,7 @@ function nextMealInfo(){
 nextMealInfo(); setInterval(()=>{now.setTime(Date.now());nextMealInfo()},60000);
 
 // Put the actual Mess WhatsApp URL here.
-// Example: const WHATSAPP_URL="https://wa.me/91XXXXXXXXXX";
+// Example: const WHATSAPP_URL="https://wa.me/91+6287760470";
 const WHATSAPP_URL="";
 ["whatsapp","navWhatsApp"].forEach(id=>{const a=document.getElementById(id);a.href=WHATSAPP_URL||"#";if(WHATSAPP_URL){a.target="_blank";a.rel="noopener"}else a.onclick=e=>{e.preventDefault();alert("Mess ka WhatsApp link abhi add nahi hua hai. script.js me WHATSAPP_URL set kar dein.");}});
+@rizwan_lens
