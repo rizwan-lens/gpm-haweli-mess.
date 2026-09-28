@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#151312">
+<title>GPM Haweli Mess — Daily Menu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+<header class="top">
+  <nav class="nav shell">
+    <a class="logo" href="#"><span class="logo-mark">GH</span><span>GPM <i>Haweli</i> Mess</span></a>
+    <div class="nav-actions">
+      <a href="#routine">Routine</a>
+      <a href="#connect">Contact</a>
+      <a class="nav-cta" id="navWhatsApp" href="#">WhatsApp ↗</a>
+    </div>
+  </nav>
+
+  <div class="hero shell">
+    <div class="hero-copy">
+      <div class="status"><span class="live-dot"></span> MESS MENU • <span id="liveDate">TODAY</span></div>
+      <h1>Good food.<br><em>Good hostel days.</em></h1>
+      <p>GPM Haweli Mess ka complete weekly menu, meal timings aur aaj ka khaana — ek premium, simple dashboard mein.</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="#today">View Today's Menu <span>↓</span></a>
+        <a class="btn ghost" href="#routine">Full Routine</a>
+      </div>
+      <div class="mini-stats">
+        <div><strong>₹3,000</strong><span>/ month</span></div>
+        <div><b></b><strong>3</strong><span> meals daily</span></div>
+        <div><strong>5–6 PM</strong><span> samosa</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orb orb1"></div><div class="orb orb2"></div>
+      <div class="plate-card">
+        <div class="plate-top"><span>GPM HAWELI</span><span>EST. MENU</span></div>
+        <div class="plate">
+          <div class="plate-inner"><span>🍛</span></div>
+        </div>
+        <div class="plate-caption"><small>TODAY'S SPECIAL</small><strong id="heroSpecial">Loading menu…</strong></div>
+      </div>
+      <div class="floating-card">
+        <span class="float-icon">⏱</span><div><small>NEXT MEAL</small><strong id="nextMeal">—</strong><span id="countdown">—</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="today shell" id="today">
+  <div class="section-label">01 / TODAY</div>
+  <div class="today-head"><div><h2 id="todayTitle">Today's Menu</h2><p id="todaySubtitle">Freshly planned for today.</p></div><div class="date-chip" id="todayDate"></div></div>
+  <div class="meal-grid">
+    <article class="meal featured"><div class="meal-top"><span>☀️ Breakfast</span><b>09:00 — 10:00</b></div><h3 id="todayBreakfast"></h3><div class="line"></div><p>Start the day with a proper hostel breakfast.</p></article>
+    <article class="meal"><div class="meal-top"><span>🍚 Lunch</span><b>13:00 — 14:00</b></div><h3 id="todayLunch"></h3><div class="line"></div><p>Homestyle lunch with the day’s main dishes.</p></article>
+    <article class="meal"><div class="meal-top"><span>🌙 Dinner</span><b>20:00 — 21:00</b></div><h3 id="todayDinner"></h3><div class="line"></div><p>End the day with a warm, filling dinner.</p></article>
+  </div>
+  <div class="samosa"><span>🥟</span><div><b>Evening Samosa</b><small>05:00 — 06:00 PM · ₹10 extra</small></div><span class="arrow">↗</span></div>
+</section>
+
+<section class="routine shell" id="routine">
+  <div class="section-label">02 / WEEKLY ROUTINE</div>
+  <div class="routine-head"><div><h2>Seven days.<br><em>Zero confusion.</em></h2></div><p>Select a day to see the complete meal plan.</p></div>
+  <div class="day-tabs" id="dayTabs"></div>
+  <div class="routine-panel" id="routinePanel"></div>
+</section>
+
+<section class="membership shell">
+  <div class="membership-copy"><div class="section-label">03 / MEMBERSHIP</div><h2>Simple monthly<br><em>mess plan.</em></h2><p>One fixed monthly fee for the regular meal routine. Evening samosa is available separately.</p></div>
+  <div class="price-card"><span>MONTHLY MESS FEE</span><strong>₹3,000</strong><small>per month</small><div class="price-rule"></div><p>Breakfast · Lunch · Dinner</p></div>
+</section>
+
+<section class="connect shell" id="connect">
+  <div class="connect-card"><div><div class="section-label">04 / CONNECT</div><h2>Need the mess?</h2><p>Menu, timing ya mess se related kisi information ke liye WhatsApp par contact karein.</p></div><a class="wa" id="whatsapp" href="#">WhatsApp Mess <span>↗</span></a></div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="shell footer-inner">
+    <div><a class="logo" href="#"><span class="logo-mark">GH</span><span>GPM <i>Haweli</i> Mess</span></a><p>Food routine made clear.</p></div>
+    <div class="host"><small>HOSTING BY</small><img src="rizwan-dp.jpg" alt="Rizwan"><b>Rizwan</b></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
